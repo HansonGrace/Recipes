@@ -1,4 +1,4 @@
-* sets gradient background and center the content */
+/* sets gradient background and center the content */
 body {
     margin: 0;
     background: linear-gradient(to bottom, #ADD8E6, #DFC5FE);
@@ -6,10 +6,10 @@ body {
     flex-direction: column; /* stack the content vertically */
     align-items: center;
     font-family: Arial, sans-serif;
-    padding-top: 20px; /* Adds some space at the top */
-    padding-bottom: 100px; /* Adds space at the bottom for scrolling */
-    overflow-x: hidden; /* doesnt allow horizontal scrolling */
-    min-height: 100%; /* content extends and allows scrolling */
+    padding: 0; /* Remove any padding to avoid breaking the gradient */
+    overflow-x: hidden; /* doesn't allow horizontal scrolling */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    height: 100%; /* Ensure full height */
 }
 
 /* Styling for the title */
@@ -18,7 +18,7 @@ body {
     font-weight: bold;
     color: white;
     font-size: 4rem; /* Increased font size */
-    padding-left: 20px; /* Optional: adds a little space from the left */
+    margin-top: 20px; /* Adds space from the top */
     margin-bottom: 20px; /* Adds space below the title */
 }
 
@@ -26,8 +26,8 @@ body {
 .nav-links {
     display: flex;
     justify-content: center; /* Centers the links */
-    width: 100%; /* Full width of the screen */
-    max-width: 600px; /* Optional: limits the width */
+    width: 100%; /* full width of the screen */
+    max-width: 600px; /* limits the width */
 }
 
     .nav-links a {
@@ -36,17 +36,13 @@ body {
         font-family: Helvetica, sans-serif;
         font-size: 1.5rem;
         padding: 10px 20px;
-        background-color: #FAD0C9; /* Pastel pink background */
-        border-radius: 5px; /* Rounded corners for the buttons */
-        margin: 0 10px; /* Adds space between the buttons */
-        transition: background-color 0.3s ease; /* Smooth transition on hover */
+        background-color: #FAD0C9; /* pastel pink background */
+        border-radius: 5px; /* rounded corners for the buttons */
+        margin: 0 10px; /* adds space between the buttons */
+        transition: background-color 0.3s ease; /* smooth transition on hover */
     }
 
         .nav-links a:hover {
-            background-color: #F8B6C1; /* Slightly darker pastel pink on hover */
+            background-color: #F8B6C1; /*slightly darker pastel pink on hover */
         }
 
-/* Adds extra space under the grid for text */
-body {
-    padding-bottom: 100px; /* Extra space at the bottom */
-}
