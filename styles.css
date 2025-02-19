@@ -1,11 +1,13 @@
+/* This will set the gradient background and center the content */
 body {
     height: 100vh;
     margin: 0;
     background: linear-gradient(to bottom, #ADD8E6, #C0C0C0);
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack the content vertically */
     align-items: center;
     font-family: Arial, sans-serif;
+    padding-top: 20px; /* Adds some space at the top */
 }
 
 /* Styling for the title */
@@ -13,5 +15,30 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 2rem;
+    font-size: 4rem; /* Increased font size */
+    padding-left: 20px; /* Optional: adds a little space from the left */
+    margin-bottom: 20px; /* Adds space below the title */
 }
+
+/* Styling for the navigation links */
+.nav-links {
+    display: flex;
+    justify-content: space-around; /* Space out the links */
+    width: 100%; /* Full width of the screen */
+    max-width: 600px; /* Optional: limits the width */
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        background-color: #333; /* Dark background for the buttons */
+        border-radius: 5px; /* Rounded corners for the buttons */
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+
+        .nav-links a:hover {
+            background-color: #555; /* Slightly lighter color on hover */
+        }
