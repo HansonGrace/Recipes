@@ -1,13 +1,13 @@
-/*this will set the gradient background and center the content */
+/* set the gradient background and center the content */
 body {
     height: 100vh;
     margin: 0;
     background: linear-gradient(to bottom, #ADD8E6, #C0C0C0);
     display: flex;
-    flex-direction: column; /*stack content vertically */
+    flex-direction: column; /* Stack the content vertically */
     align-items: center;
     font-family: Arial, sans-serif;
-    padding-top: 20px; /*addssome space at the top */
+    padding-top: 20px; /* Adds some space at the top */
 }
 
 /* Styling for the title */
@@ -15,17 +15,17 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 4rem; /* Increased font size */
-    padding-left: 20px; /*adds a little space from the left */
-    margin-bottom: 20px; /*adds space below the title */
+    font-size: 3rem; /* Increased font size */
+    padding-left: 20px; /* Optional: adds a little space from the left */
+    margin-bottom: 20px; /* Adds space below the title */
 }
 
-/* Styling for the navigation links */
+/* styling for the navigation links */
 .nav-links {
     display: flex;
-    justify-content: space-around; /* Space out the links */
-    width: 100%; /* Full width of the screen */
-    max-width: 600px; /* Optional: limits the width */
+    justify-content: center; /* centers the links */
+    width: 100%; /* full width of the screen */
+    max-width: 600px; /* optional: limits the width */
 }
 
     .nav-links a {
@@ -34,11 +34,12 @@ body {
         font-family: Helvetica, sans-serif;
         font-size: 1.5rem;
         padding: 10px 20px;
-        background-color: #FAD0C9; /* pastel pink background for the buttons */
-        border-radius: 5px; /* round the corners for the buttons */
+        background-color: #FAD0C9; /* pastel pink background */
+        border-radius: 5px; /*rounded corners for the buttons */
+        margin: 0 10px; /* adds space between the buttons */
         transition: background-color 0.3s ease; /* smooth transition on hover */
     }
 
         .nav-links a:hover {
-            background-color: #555; /* Slightly lighter color on hover */
+            background-color: #F8B6C1; /* slightly darker pastel pink on hover */
         }
