@@ -1,4 +1,4 @@
-/* sets gradient background and center the content */
+* sets gradient background and center the content */
 body {
     margin: 0;
     background: linear-gradient(to bottom, #ADD8E6, #DFC5FE);
@@ -45,32 +45,6 @@ body {
         .nav-links a:hover {
             background-color: #F8B6C1; /* Slightly darker pastel pink on hover */
         }
-
-/* Styling for the recipe grid */
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns, 1fr allows it to equally space */
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 15px; /* space between the boxes */
-    width: 80%; 
-    max-width: 1000px; /* Optional: limits the width of the grid */
-    margin-top: 40px; /* Adds space between nav links and recipe boxes */
-    padding-left: 80px;
-}
-
-/* Styling for individual recipe boxes */
-.recipe-box {
-    background-color: white; /* White background for the boxes */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px;
-    height: 150px; /* Makes the box height equal to width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Subtle shadow for the boxes */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 200px; /* Ensures the boxes take full width of the column */
-}
 
 /* Adds extra space under the grid for text */
 body {
