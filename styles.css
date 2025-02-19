@@ -1,13 +1,15 @@
-/* set the gradient background and center the content */
+/* sets gradient background and center the content */
 body {
-    height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #ADD8E6, #C0C0C0);
+    background: linear-gradient(to bottom, #ADD8E6, #DFC5FE);
     display: flex;
-    flex-direction: column; /* Stack the content vertically */
+    flex-direction: column; /* stack the content vertically */
     align-items: center;
     font-family: Arial, sans-serif;
     padding-top: 20px; /* Adds some space at the top */
+    padding-bottom: 100px; /* Adds space at the bottom for scrolling */
+    overflow-x: hidden; /* doesnt allow horizontal scrolling */
+    min-height: 100%; /* content extends and allows scrolling */
 }
 
 /* Styling for the title */
@@ -15,17 +17,17 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 3rem; /* Increased font size */
+    font-size: 4rem; /* Increased font size */
     padding-left: 20px; /* Optional: adds a little space from the left */
     margin-bottom: 20px; /* Adds space below the title */
 }
 
-/* styling for the navigation links */
+/* Styling for the navigation links */
 .nav-links {
     display: flex;
-    justify-content: center; /* centers the links */
-    width: 100%; /* full width of the screen */
-    max-width: 600px; /* optional: limits the width */
+    justify-content: center; /* Centers the links */
+    width: 100%; /* Full width of the screen */
+    max-width: 600px; /* Optional: limits the width */
 }
 
     .nav-links a {
@@ -34,12 +36,43 @@ body {
         font-family: Helvetica, sans-serif;
         font-size: 1.5rem;
         padding: 10px 20px;
-        background-color: #FAD0C9; /* pastel pink background */
-        border-radius: 5px; /*rounded corners for the buttons */
-        margin: 0 10px; /* adds space between the buttons */
-        transition: background-color 0.3s ease; /* smooth transition on hover */
+        background-color: #FAD0C9; /* Pastel pink background */
+        border-radius: 5px; /* Rounded corners for the buttons */
+        margin: 0 10px; /* Adds space between the buttons */
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
     }
 
         .nav-links a:hover {
-            background-color: #F8B6C1; /* slightly darker pastel pink on hover */
+            background-color: #F8B6C1; /* Slightly darker pastel pink on hover */
         }
+
+/* Styling for the recipe grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, 1fr allows it to equally space */
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px; /* space between the boxes */
+    width: 80%; 
+    max-width: 1000px; /* Optional: limits the width of the grid */
+    margin-top: 40px; /* Adds space between nav links and recipe boxes */
+    padding-left: 80px;
+}
+
+/* Styling for individual recipe boxes */
+.recipe-box {
+    background-color: white; /* White background for the boxes */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    height: 150px; /* Makes the box height equal to width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Subtle shadow for the boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px; /* Ensures the boxes take full width of the column */
+}
+
+/* Adds extra space under the grid for text */
+body {
+    padding-bottom: 100px; /* Extra space at the bottom */
+}
