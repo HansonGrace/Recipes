@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #ADD8E6, #C0C0C0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the title */
+.title {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+}
